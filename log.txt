@@ -1,0 +1,19 @@
+Exception caught:
+file	[C:\Users\lenovo\Desktop\прога РТ\exceptions.last\main.cpp]
+line	[26]
+error code 	[3]
+Additional info: Can't open file
+Previous exception:
+
+Exception caught:
+file	[C:\Users\lenovo\Desktop\прога РТ\exceptions.last\main.cpp]
+line	[36]
+error code 	[0]
+Additional info: ops
+Previous exception:
+
+Exception caught:
+file	[C:\Users\lenovo\Desktop\прога РТ\exceptions.last\main.cpp]
+line	[41]
+error code 	[2]
+Additional info: hurry up!
