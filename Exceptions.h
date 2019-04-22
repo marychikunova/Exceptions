@@ -2,15 +2,13 @@
 #include <fstream>
 #include <string>
 
-using namespace std;
-
 #define FTHROW(err_code, str)\
 	throw new my_exception (__FILE__, __LINE__, err_code, str, nullptr);
 
 #define THROW(err_code, str, ptr)\
 	throw new my_exception (__FILE__, __LINE__, err_code, str, ptr);
 
-fstream log ("log.txt");
+std::fstream log ("log.txt");
 
 enum Error {
 	SEGMENTATION_FAULT,
@@ -22,16 +20,16 @@ enum Error {
 
 class my_exception {
 	private:
-		string file;
+		std::string file;
 		int line;
 
 		Error err_code;
-		string str;
+		std::string str;
 		my_exception *old;
 
 	public:
 		my_exception () {};
-		my_exception (string f, int l, Error e, string s, my_exception *o) {
+		my_exception (std::string f, int l, Error e, std::string s, my_exception *o) {
 			file = f;
 			line = l;
 			err_code = e;
